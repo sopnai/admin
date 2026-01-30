@@ -28,8 +28,8 @@
         "draft-js-export-html": "^1.4.1",
         "echarts": "^5.4.3",
         "echarts-for-react": "^3.0.2",
-        "eslint": "^8.55.0",
-        "firebase": "^10.7.1",
+        "eslint": "8.57.0",
+        "firebase": "9.23.0",
         "flatpickr": "^4.6.13",
         "formik": "^2.4.5",
         "google-maps-react": "^2.0.6",
@@ -155,6 +155,35 @@
     "resolutions": {
         "moment": "2.29.1",
         "autoprefixer": "10.4.5"
+    },
+    "overrides": {
+        "ajv": "^8.12.0",
+        "eslint": "8.57.0",
+        "fork-ts-checker-webpack-plugin": {
+            "schema-utils": "3.3.0",
+            "ajv": "6.12.6",
+            "ajv-keywords": "3.5.2"
+        },
+        "babel-loader": {
+            "schema-utils": "2.6.5",
+            "ajv": "6.12.6",
+            "ajv-keywords": "3.5.2"
+        },
+        "css-loader": {
+            "schema-utils": "3.3.0",
+            "ajv": "6.12.6",
+            "ajv-keywords": "3.5.2"
+        },
+        "postcss-loader": {
+            "schema-utils": "3.3.0",
+            "ajv": "6.12.6",
+            "ajv-keywords": "3.5.2"
+        },
+        "sass-loader": {
+            "schema-utils": "3.3.0",
+            "ajv": "6.12.6",
+            "ajv-keywords": "3.5.2"
+        }
     },
     "devDependencies": {
         "eslint-config-standard-react": "^9.2.0",
