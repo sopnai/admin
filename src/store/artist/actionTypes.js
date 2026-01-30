@@ -1,0 +1,8 @@
+/* EVENTS */
+export const GET_ARTIST = "GET_ARTIST";
+export const UPDATE_ARTIST = "UPDATE_ARTIST";
+export const DELETE_ARTIST = "DELETE_ARTIST";
+export const APPROVE_ARTIST = "APPROVE_ARTIST";
+export const GET_SINGLE_ARTIST = "GET_SINGLE_ARTIST";
+export const SINGLE_ARTIST = "SINGLE_ARTIST";
+export const LIST_ARTIST = "LIST_ARTIST"; 

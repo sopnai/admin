@@ -1,0 +1,6 @@
+/* EVENTS */
+export const GET_BOOKING = "GET_BOOKING";
+export const STATUS_BOOKING = "STATUS_BOOKING";
+export const GET_SINGLE_BOOKING = "GET_SINGLE_BOOKING";
+export const SINGLE_BOOKING = "SINGLE_BOOKING";
+export const LIST_BOOKING = "LIST_BOOKING"; 

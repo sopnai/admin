@@ -1,0 +1,23 @@
+.customProfileBG{
+    height: 200px;
+}
+
+.customProfileImg{
+    position: relative;
+}
+
+.customProfileImg ol{
+    position: absolute;
+    top: -80px;
+}
+
+.customProfileImg ol h4{
+    position: relative;
+    top: 30px;
+    left: 20px;
+    color: #fff;
+}
+
+.customProfileImg .customProfileInfo{
+   margin-left: 140px;
+}

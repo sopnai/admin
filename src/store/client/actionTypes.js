@@ -1,0 +1,6 @@
+export const GET_CLIENT = "GET_CLIENT";
+export const UPDATE_CLIENT = "UPDATE_CLIENT";
+export const DELETE_CLIENT = "DELETE_CLIENT";
+export const GET_SINGLE_CLIENT = "GET_SINGLE_CLIENT";
+export const SINGLE_CLIENT = "SINGLE_CLIENT";
+export const LIST_CLIENT = "LIST_CLIENT"; 

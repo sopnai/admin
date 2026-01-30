@@ -1,0 +1,6 @@
+/* EVENTS */
+export const GET_REPORT = "GET_REPORT";
+export const STATUS_REPORT = "STATUS_REPORT";
+export const GET_SINGLE_REPORT = "GET_SINGLE_REPORT";
+export const SINGLE_REPORT = "SINGLE_REPORT";
+export const LIST_REPORT = "LIST_REPORT"; 

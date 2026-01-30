@@ -1,0 +1,2 @@
+export const GET_ARTISTLVL = "GET_ARTISTLVL";
+export const LIST_ARTISTLVL = "LIST_ARTISTLVL";
