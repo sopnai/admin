@@ -85,18 +85,24 @@ admin-main/
 
 - **Node.js** 18+ (or 20 for Docker build)
 - **Yarn** or npm
+- **Backend API** running (see [Development Guide](docs/DEVELOPMENT.md))
 
-### Install and run
+### Quick Start
 
 ```bash
 # Install dependencies
 yarn install
 # or: npm install
 
+# Configure environment (create .env file)
+# See Environment Variables section below
+
 # Start development server (http://localhost:3000)
 yarn start
 # or: npm start
 ```
+
+**📖 For detailed instructions on running with backend and testing, see [Development Guide](docs/DEVELOPMENT.md)**
 
 ### Build for production
 
@@ -231,6 +237,7 @@ For building the app inside Docker and deployment options, see **`docs/DEPLOYMEN
 
 ## Further Documentation
 
+- **`docs/DEVELOPMENT.md`** – **⭐ Start here!** Running with backend, testing guide, troubleshooting
 - **`docs/ARCHITECTURE.md`** – Redux flow, auth flow, layout, helpers
 - **`docs/API.md`** – Backend endpoint list and helper mapping
 - **`docs/DEPLOYMENT.md`** – Environment, Docker, nginx, deployment checklist
