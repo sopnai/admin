@@ -33,6 +33,7 @@
         "flatpickr": "^4.6.13",
         "formik": "^2.4.5",
         "google-maps-react": "^2.0.6",
+        "http-proxy-middleware": "^3.0.5",
         "i18next": "^23.7.8",
         "i18next-browser-languagedetector": "^7.2.0",
         "jsonwebtoken": "^9.0.2",
@@ -186,6 +187,8 @@
         }
     },
     "devDependencies": {
+        "@babel/core": "^7.29.0",
+        "@babel/eslint-parser": "^7.28.6",
         "eslint-config-standard-react": "^9.2.0",
         "eslint-plugin-react": "^7.20.6",
         "prettier": "^2.1.1"

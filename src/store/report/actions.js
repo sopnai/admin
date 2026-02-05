@@ -1,12 +1,11 @@
 import {
     GET_REPORT,
     LIST_REPORT,
-    STATUS_REPORT,
     GET_SINGLE_REPORT,
     SINGLE_REPORT
 } from "./actionTypes"
 
-import { statusReport, deleteReport, updateReport } from "helpers/Module"
+import { statusReport } from "helpers/Module"
 
 export const setLoadingReport = (isLoading) => ({
     type: 'SET_LOADING',

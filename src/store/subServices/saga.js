@@ -12,22 +12,22 @@ import { getSubsList } from "helpers/Module"
 
 function* FunctionfetchSubServList({ payload }) {
     try {
-        yield put(setLoadingSubs(true));
+        yield put(setLoadingSubs(true))
 
-        const response = yield call(getSubsList, payload);
+        const response = yield call(getSubsList, payload)
 
-        yield put(listSubs(payload.servId, response));
+        yield put(listSubs(payload.servId, response))
     } catch (error) {
-        console.error("Error fetching sub-services:", error);
+        console.error("Error fetching sub-services:", error)
     } finally {
-        yield put(setLoadingSubs(false));
+        yield put(setLoadingSubs(false))
     }
 }
 
 
 
 function* subsSaga() {
-    yield takeEvery(GET_SUBS, FunctionfetchSubServList);
+    yield takeEvery(GET_SUBS, FunctionfetchSubServList)
 }
 
-export default subsSaga;
+export default subsSaga

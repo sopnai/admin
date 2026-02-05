@@ -1,5 +1,4 @@
 import {
-    GET_CAT,
     LIST_SUBS,
 } from "./actionTypes"
 
@@ -7,7 +6,7 @@ const INIT_STATE = {
     subServ: {},
     error: {},
     isLoading: false,
-};
+}
 
 const SubServRD = (state = INIT_STATE, action) => {
     switch (action.type) {
@@ -19,17 +18,17 @@ const SubServRD = (state = INIT_STATE, action) => {
                     [action.payload.servId]: action.payload.data,
                 },
                 isLoading: false,
-            };
+            }
         case 'SET_LOADING':
             return {
                 ...state,
                 isLoading: action.payload,
-            };
+            }
         default:
-            return state;
+            return state
     }
-};
+}
 
-export default SubServRD;
+export default SubServRD
 
 

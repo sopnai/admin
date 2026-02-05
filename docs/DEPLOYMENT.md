@@ -15,10 +15,69 @@ REACT_APP_DEFAULTAUTH=jwt
 Build:
 
 ```bash
-yarn build
+DISABLE_ESLINT_PLUGIN=true yarn build
 ```
 
+> **Note:** The `DISABLE_ESLINT_PLUGIN=true` flag is required because the codebase has ESLint warnings that are treated as errors during production builds. Without this flag, the build will fail.
+
 The `build/` folder contains static assets. Serve `index.html` for all non-file routes (SPA).
+
+To preview the build locally:
+
+```bash
+npx serve -s build -l 3000
+```
+
+Then open http://localhost:3000 in your browser.
+
+---
+
+## Admin Account Setup
+
+Admin accounts are **not** created through the frontend. There is no public registration page. Accounts must be created via backend scripts.
+
+### Creating an Admin Account
+
+Run one of the following scripts from the backend directory (`Totally_flawless_backend/`):
+
+```bash
+# Option 1: Using UUID for admin ID
+node scripts/createAdminAccount.js
+
+# Option 2: Using auto-increment ID
+node scripts/insertAdminAccount.js
+```
+
+### Default Credentials
+
+The scripts create an admin with these default credentials (can be overridden via environment variables):
+
+| Field    | Default Value         | Env Variable     |
+|----------|-----------------------|------------------|
+| Email    | `admin@flawless.com`  | `ADMIN_EMAIL`    |
+| Password | `admin123`            | `ADMIN_PASSWORD` |
+| Name     | `Admin User`          | `ADMIN_NAME`     |
+| Mobile   | `1234567890`          | `ADMIN_MOBILE`   |
+
+### Custom Admin Account
+
+To create an admin with custom credentials:
+
+```bash
+ADMIN_EMAIL=myemail@example.com ADMIN_PASSWORD=mysecurepassword node scripts/createAdminAccount.js
+```
+
+### Login Endpoint
+
+The admin panel authenticates against: `POST {REACT_APP_API_URL}/auth/login`
+
+Request body:
+```json
+{
+  "email": "admin@flawless.com",
+  "password": "admin123"
+}
+```
 
 ---
 

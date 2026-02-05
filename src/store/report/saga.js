@@ -1,12 +1,12 @@
 import { takeEvery, put, call } from "redux-saga/effects"
 
 import {
-    GET_REPORT, APPROVE_REPORT, DELETE_REPORT, LIST_REPORT, SINGLE_REPORT, UPDATE_REPORT, GET_SINGLE_REPORT
+    GET_REPORT, GET_SINGLE_REPORT
 } from "./actionTypes"
 
 import { listReport, setLoadingReport, storeSingleReportAction } from "./actions"
 
-import { getReportList, approveReport, deleteReport, getSingleReport, updateReport } from "helpers/Module"
+import { getReportList, getSingleReport } from "helpers/Module"
 
 
 

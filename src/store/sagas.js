@@ -7,7 +7,7 @@ import ForgetSaga from "./auth/forgetpwd/saga"
 import ProfileSaga from "./auth/profile/saga"
 import LayoutSaga from "./layout/saga"
 import calendarSaga from "./calendar/saga"
-import clientSaga from "./client/saga";
+import clientSaga from "./client/saga"
 import artistSaga from "./artist/saga"
 import bookingSaga from "./booking/saga"
 import dashboardSaga from "./dashboard/saga"

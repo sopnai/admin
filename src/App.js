@@ -24,8 +24,10 @@ import "./assets/scss/theme.scss";
 
 import fakeBackend from "./helpers/AuthType/fakeBackend";
 
-// Activating fake backend
-fakeBackend();
+// Activating fake backend - only for "fake" auth mode, not for jwt or firebase
+if (process.env.REACT_APP_DEFAULTAUTH === "fake") {
+    fakeBackend();
+}
 
 // const firebaseConfig = {
 //   apiKey: process.env.REACT_APP_APIKEY,

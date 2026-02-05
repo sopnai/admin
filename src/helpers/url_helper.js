@@ -30,7 +30,7 @@ export const GET_CATEGORIES = "/categories"
 
 
 // Admin panel
-export const ADMIN_LOGIN = "/login";
+export const ADMIN_LOGIN = "/auth/login";
 export const ADMIN_PROFILE = "/profile";
 
 // Artist
